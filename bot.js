@@ -2,7 +2,19 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log('Ready');
-
+  console.log('작동준비완료!');
+  console.log('[BOT]MINION 실행중...');
+  console.log('실행중...');
 });
-clitent.login(process.env.BOT_TOKEN);
+
+
+client.on('message', message => {
+  if (message.content === 'fuck you minion') {
+      message.reply('(╯°□°）╯︵ ┻━┻');
+
+
+  }
+});
+
+
+client.login(process.env.BOT_TOKEN);
